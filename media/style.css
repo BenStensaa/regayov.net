@@ -269,7 +269,7 @@ body {
     transform: translate(-50%, -0%);
     text-align: center;
     background-color: rgba(0, 175, 0, 0.1);
-    border:solid rgba(0, 175, 0, 1) 1px;
+    border:solid rgb(0, 64, 175) 1px;
     color: #fff;
     border-radius: var(--roundness);
     z-index: 9999;
