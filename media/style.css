@@ -328,7 +328,7 @@ body {
 
 .main2_feature_link:link, 
 .main2_feature_link:visited {
-  color: inherit; /* Ensures the color remains the same as the default */
+  color: #ffffff; /* Ensures the color remains the same as the default */
   text-decoration: none; /* Removes underline if any */
 }
 
@@ -665,7 +665,7 @@ body {
 /* Copyright Text */
 
 .copyright {
-    color: #ffffff99;
+    color: #ffffff89;
     text-decoration: none;
 }
 
@@ -674,7 +674,7 @@ body {
     justify-content: center;
     padding: 16px;
     width:auto;
-    background-color: #000;
+    background-color: #00000000;
 }
 
 
