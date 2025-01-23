@@ -268,7 +268,7 @@ body {
     left: 50%;
     transform: translate(-50%, -0%);
     text-align: center;
-    background-color: rgba(0, 175, 0, 0.1);
+    background-color: rgba(0, 38, 175, 0.1);
     border:solid rgb(0, 64, 175) 1px;
     color: #fff;
     border-radius: var(--roundness);
@@ -324,6 +324,12 @@ body {
 .main2_feature:hover {
     background-color: #00000099;
     transform: scale(1.05)
+}
+
+.main2_feature_link:link, 
+.main2_feature_link:visited {
+  color: inherit; /* Ensures the color remains the same as the default */
+  text-decoration: none; /* Removes underline if any */
 }
 
 @media (max-width: 1599px) {
