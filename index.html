@@ -45,8 +45,27 @@
         </a>
         <div class="main1_description">
           <a><br></a>
-          <a class="main1_actcent">Sending binary gibberish from 15.1 billion miles away</a><a></a>
+          <a class="main1_actcent">Sending binary gibberish from <span id="voyager_distance">15.8 billion</span> miles away</a><a></a>
         </div>
+        <script>
+          (function() {
+            var anchorTime = new Date("2026-11-18T02:16:07-08:00").getTime();
+            var anchorMiles = 16094799096;
+            var mphRate = 38000;
+            var milesPerMs = mphRate / 3600000;
+            var el = document.getElementById("voyager_distance");
+
+            function updateDistance() {
+              var now = Date.now();
+              var miles = anchorMiles + milesPerMs * (now - anchorTime);
+              var billions = miles / 1e9;
+              el.textContent = billions.toFixed(3) + " billion";
+            }
+
+            updateDistance();
+            setInterval(updateDistance, 1000);
+          })();
+        </script>
         <div class="main1_ipcopier_div">
           <button class="main1_ipcopier" onclick="copyText()" type="button">
             <span class="main1_ipcopier_text1">mc.regayov.net</span>
@@ -90,40 +109,40 @@
       </div>
       <div id="more"></div>
       <div class="main2">
-      <a class="headline">What we have</a>
+      <a class="headline">What We Have</a>
       <div class="main2_features_div">
         <a href="https://modrinth.com/plugin/simple-voice-chat" class="main2_feature_link">
           <div class="main2_feature">
             <img class="main2_feature_img" alt="Feature Image" src="media/voicechat.png">
             <div class="main2_feature_headline">Voice Chat</div>
-            <div class="main2_feature_text">Proximity voice chat thanks to the simple voicechat mod.</div>
+            <div class="main2_feature_text">Proximity voice chat thanks to the Simple Voice Chat mod.</div>
           </div>
         </a>                   
         <a href="http://map.regayov.net" class="main2_feature_link">
           <div class="main2_feature">
             <img class="main2_feature_img" alt="Feature Image" src="media/bluemap.png">
             <div class="main2_feature_headline">Web Map</div>
-            <div class="main2_feature_text">Interactive web map thanks to the Bluemap plugin.</div>
+            <div class="main2_feature_text">Interactive web map thanks to the BlueMap plugin.</div>
           </div>
         </a>
         <a href="https://modrinth.com/user/bebebea_loste" class="main2_feature_link">
           <div class="main2_feature">
             <img class="main2_feature_img" alt="Feature Image" src="media/worldgen.png">
             <div class="main2_feature_headline">Custom World Gen</div>
-            <div class="main2_feature_text">Custom vanilla-like world generation thanks to Explorify and Geophilic datapacks.</div>
+            <div class="main2_feature_text">Custom vanilla-like world generation thanks to the Explorify and Geophilic datapacks.</div>
           </div>
           <a href="https://modrinth.com/mod/voxy" class="main2_feature_link">
             <div class="main2_feature">
               <img class="main2_feature_img" alt="Feature Image" src="media/distant.png">
               <div class="main2_feature_headline">Voxy</div>
-              <div class="main2_feature_text">Extended render distance thanks to Voxy</div>
+              <div class="main2_feature_text">Extended render distance thanks to Voxy.</div>
             </div>
           </a>
           <a href="https://modrinth.com/plugin/coreprotect" class="main2_feature_link">
             <div class="main2_feature">
               <img class="main2_feature_img" alt="Feature Image" src="media/distant.png">
               <div class="main2_feature_headline">Grief Protection</div>
-              <div class="main2_feature_text">Rollback and restore any amount of damage thanks to the Core Protect plugin.</div>
+              <div class="main2_feature_text">Roll back and restore any amount of damage thanks to the CoreProtect plugin.</div>
             </div>
           </a>
         </a>          
@@ -144,7 +163,7 @@
         </div>
       <div id="join"></div>
       <div class="main3">
-        <a class="headline">How to join</a>
+        <a class="headline">How to Join</a>
         <div class="main3_join_div_div">
           <div class="main3_join_div">
             <a class="main3_join_title">Java</a>
